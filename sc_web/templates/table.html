@@ -1,0 +1,250 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>РусАвтоматика Сервисный центр</title>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'stylesheets/base.css' %}">
+	<link rel="stylesheet" href="{% static 'stylesheets/skeleton.css' %}">
+        <link rel="stylesheet" href="{% static 'stylesheets/normalize.css' %}">
+	<link rel="stylesheet" href="{% static 'stylesheets/layout.css' %}">
+        <link rel="stylesheet" href="{% static 'stylesheets/tables.css' %}">
+	<style type="text/css">
+		.example {
+			margin-bottom: 30px;
+		}
+
+		code {
+			padding: 3px 4px;
+			font-size: 12px;
+			font-family: "Monaco", "Courier New", sans-serif;
+			background: #eee;
+		}
+	</style>
+
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/apple-touch-icon-72x72.png' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/apple-touch-icon-114x114.png' %}">
+
+</head>
+<body>
+        
+<!-- bootstrap tabs
+        <legend>Tabs Above Centered (Bordered)</legend>
+        <div class="tabs-x align-center tabs-above tab-bordered">
+            
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="dropdown1-tab" href="#dropdown1" role="tab" data-bs-toggle="tab" aria-controls="dropdown1">Dropdown 1</a>
+                        <a class="dropdown-item" id="dropdown2-tab" href="#dropdown2" role="tab" data-bs-toggle="tab" aria-controls="dropdown2">Dropdown 2</a>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">...</div>
+                <div class="tab-pane fade" id="dropdown2" role="tabpanel" aria-labelledby="dropdown2-tab">...</div>
+            </div>
+        </div>
+
+-->
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="container">
+		<div class="sixteen columns">
+			<h1 class="remove-bottom" style="margin-top: 40px" align="center">Сервисный Центр</h1>
+			<h5 align="center">РусАвтоматика</h5>
+			<hr />
+		</div>
+		<div class="one-third column value">
+			<a class="button" href="#">Try Skeleton</a>
+			<p>This page demonstrates my custom made table styles for the Skeleton boilerplate.</p>
+			<p> Heavily inspired by <a href="http://twitter.github.com/bootstrap/#tables">Bootstrap</a>.</p>
+			<p>Comments? Check <a href="https://github.com/dhgamache/Skeleton/issues/41">this thread</a>.</p>
+		</div>
+		<div class="two-thirds column value">
+			<div class="example">
+				<h3>Example: Default table styles</h3>
+				<p>By default tables are styled with inner horizontal borders. Table headings and data are set at 13px. No additional classes necessary.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Language</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Some</td>
+							<td>One</td>
+							<td>English</td>
+						</tr>
+       		                                 <tr>
+       		                                         <td>2</td>
+       		                                         <td>Joe</td>
+       		                                         <td>Sixpack</td>
+       		                                         <td>English</td>
+       		                                 </tr>
+       		                                 <tr>
+       		                                         <td>3</td>
+       		                                         <td>Stu</td>
+       		                                         <td>Dent</td>
+       		                                         <td>Code</td>
+       		                                 </tr>
+					</tbody>
+				</table>
+			</div>
+                        <div class="example">
+                                <h3>Example: Condensed table</h3>
+                                <p>For large tables where tight spacing is required.<br />Usage: <code>&lt;table class="condensed"&gt; ... &lt;/table&gt;</code></p>
+                                <table class="condensed">
+                                        <thead>
+                                                <tr>
+                                                        <th>#</th>
+                                                        <th>First Name</th>
+                                                        <th>Last Name</th>
+                                                        <th>Language</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>1</td>
+                                                        <td>Some</td>
+                                                        <td>One</td>
+                                                        <td>English</td>
+                                                </tr>
+                                                 <tr>
+                                                         <td>2</td>
+                                                         <td>Joe</td>
+                                                         <td>Sixpack</td>
+                                                         <td>English</td>
+                                                 </tr>
+                                                 <tr>
+                                                         <td>3</td>
+                                                         <td>Stu</td>
+                                                         <td>Dent</td>
+                                                         <td>Code</td>
+                                                 </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                        <div class="example">
+                                <h3>Example: Bordered table</h3>
+                                <p>Inner and outer borders. May be combined with <code>condensed</code> class.<br />Usage: <code>&lt;table class="bordered"&gt; ... &lt;/table&gt;</code></p>
+                                <table class="bordered">
+                                        <thead>
+                                                <tr>
+                                                        <th>#</th>
+                                                        <th>First Name</th>
+                                                        <th>Last Name</th>
+                                                        <th>Language</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>1</td>
+                                                        <td>Some</td>
+                                                        <td>One</td>
+                                                        <td>English</td>
+                                                </tr>
+                                                 <tr>
+                                                         <td>2</td>
+                                                         <td>Joe</td>
+                                                         <td>Sixpack</td>
+                                                         <td>English</td>
+                                                 </tr>
+                                                 <tr>
+                                                         <td>3</td>
+                                                         <td>Stu</td>
+                                                         <td>Dent</td>
+                                                         <td>Code</td>
+                                                 </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                        <div class="example">
+                                <h3>Example: Zebra-striped</h3>
+                                <p>Alternating row color style. May be combined with <code>condensed</code> and/or <code>bordered</code> classes.<br />Usage: <code>&lt;table class="zebra-striped"&gt; ... &lt;/table&gt;</code></p>
+                                <table class="zebra-striped">
+                                        <thead>
+                                                <tr>
+                                                        <th>#</th>
+                                                        <th>First Name</th>
+                                                        <th>Last Name</th>
+                                                        <th>Language</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>1</td>
+                                                        <td>Some</td>
+                                                        <td>One</td>
+                                                        <td>English</td>
+                                                </tr>
+                                                 <tr>
+                                                         <td>2</td>
+                                                         <td>Joe</td>
+                                                         <td>Sixpack</td>
+                                                         <td>English</td>
+                                                 </tr>
+                                                 <tr>
+                                                         <td>3</td>
+                                                         <td>Stu</td>
+                                                         <td>Dent</td>
+                                                         <td>Code</td>
+                                                 </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+		</div>
+	</div><!-- container -->
+
+
+
+	<!-- JS
+	================================================== -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="{% static 'javascripts/tabs.js' %}"></script>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

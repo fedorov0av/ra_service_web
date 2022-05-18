@@ -87,3 +87,5 @@ local_settings.py
 
 .env
 db.sqlite3
+sc_web/templates/robots.txt
+sc_web/templates/README.md

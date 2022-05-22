@@ -94,8 +94,6 @@
 		<div class="one-third column value">
 			<a class="button" href="#">Try Skeleton</a>
 			<p>This page demonstrates my custom made table styles for the Skeleton boilerplate.</p>
-			<p> Heavily inspired by <a href="http://twitter.github.com/bootstrap/#tables">Bootstrap</a>.</p>
-			<p>Comments? Check <a href="https://github.com/dhgamache/Skeleton/issues/41">this thread</a>.</p>
 		</div>
                 
 		<div class="two-thirds column value">
@@ -113,88 +111,30 @@
                                 </li>
                         </ul>
                         <div id="myTabContent-tabs-above" class="tab-content">
-                                <div class="tab-pane fade show active" id="home-tabs-above" role="tabpanel" aria-labelledby="home-tab-tabs-above">
+                                <div class="tab-pane fade" id="home-tabs-above" role="tabpanel" aria-labelledby="home-tab-tabs-above">
                                         <p>
-                                                <form>
-                                                        серийный номер
-                                                        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-                                                        <input class="button-primary" type="submit" value="Submit">
+                                                <form  class="u-full-width" >
+                                                        <input class="u-full-width ten columns" placeholder="Серийный номер">    
+                                                        <input class="button-primary ten columns" type="submit" value="Поиск">
                                                 </form>
                                         </p>
                                 </div>
-                                <div class="tab-pane fade" id="profile-tabs-above" role="tabpanel" aria-labelledby="profile-tabs-above"><p>2...</p></div>
-                                <div class="tab-pane fade" id="dropdown-tabs-above-1" role="tabpanel" aria-labelledby="dropdown-tab-tabs-above-1"><p>3...</p></div>
+                                <div class="tab-pane fade show active" id="profile-tabs-above" role="tabpanel" aria-labelledby="profile-tabs-above">
+                                        <p>
+                                                <label for="date1" class="one columns">от</label>
+                                                <input type="date" class="form-control four columns" id="date1" name="date" placeholder="ОТ" required>
+                                                <label for="date2" class="one columns">до</label>
+                                                <input type="date" class="form-control four columns" id="date2" name="date" placeholder="ДО" required>
+                                                <input class="button-primary ten columns" type="submit" value="Поиск">
+                                        </p>
+                                </div>
+                                <div class="tab-pane fade" id="dropdown-tabs-above-1" role="tabpanel" aria-labelledby="dropdown-tab-tabs-above-1"><p>
+                                        <p><label for="exampleMessage" align="center">Серийный номер</label></p>
+                                </p>
+                                </div>
                         </div>
                         </div>
                         
-			<div class="example">
-				<h3>Example: Default table styles</h3>
-				<p>By default tables are styled with inner horizontal borders. Table headings and data are set at 13px. No additional classes necessary.</p>
-				<table>
-					<thead>
-						<tr>
-							<th>#</th>
-							<th>First Name</th>
-							<th>Last Name</th>
-							<th>Language</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Some</td>
-							<td>One</td>
-							<td>English</td>
-						</tr>
-       		                                 <tr>
-       		                                         <td>2</td>
-       		                                         <td>Joe</td>
-       		                                         <td>Sixpack</td>
-       		                                         <td>English</td>
-       		                                 </tr>
-       		                                 <tr>
-       		                                         <td>3</td>
-       		                                         <td>Stu</td>
-       		                                         <td>Dent</td>
-       		                                         <td>Code</td>
-       		                                 </tr>
-					</tbody>
-				</table>
-			</div>
-                        <div class="example">
-                                <h3>Example: Condensed table</h3>
-                                <p>For large tables where tight spacing is required.<br />Usage: <code>&lt;table class="condensed"&gt; ... &lt;/table&gt;</code></p>
-                                <table class="condensed">
-                                        <thead>
-                                                <tr>
-                                                        <th>#</th>
-                                                        <th>First Name</th>
-                                                        <th>Last Name</th>
-                                                        <th>Language</th>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>1</td>
-                                                        <td>Some</td>
-                                                        <td>One</td>
-                                                        <td>English</td>
-                                                </tr>
-                                                 <tr>
-                                                         <td>2</td>
-                                                         <td>Joe</td>
-                                                         <td>Sixpack</td>
-                                                         <td>English</td>
-                                                 </tr>
-                                                 <tr>
-                                                         <td>3</td>
-                                                         <td>Stu</td>
-                                                         <td>Dent</td>
-                                                         <td>Code</td>
-                                                 </tr>
-                                        </tbody>
-                                </table>
-                        </div>
                         <div class="example">
                                 <h3>Example: Bordered table</h3>
                                 <p>Inner and outer borders. May be combined with <code>condensed</code> class.<br />Usage: <code>&lt;table class="bordered"&gt; ... &lt;/table&gt;</code></p>
@@ -229,40 +169,7 @@
                                         </tbody>
                                 </table>
                         </div>
-                        <div class="example">
-                                <h3>Example: Zebra-striped</h3>
-                                <p>Alternating row color style. May be combined with <code>condensed</code> and/or <code>bordered</code> classes.<br />Usage: <code>&lt;table class="zebra-striped"&gt; ... &lt;/table&gt;</code></p>
-                                <table class="zebra-striped">
-                                        <thead>
-                                                <tr>
-                                                        <th>#</th>
-                                                        <th>First Name</th>
-                                                        <th>Last Name</th>
-                                                        <th>Language</th>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>1</td>
-                                                        <td>Some</td>
-                                                        <td>One</td>
-                                                        <td>English</td>
-                                                </tr>
-                                                 <tr>
-                                                         <td>2</td>
-                                                         <td>Joe</td>
-                                                         <td>Sixpack</td>
-                                                         <td>English</td>
-                                                 </tr>
-                                                 <tr>
-                                                         <td>3</td>
-                                                         <td>Stu</td>
-                                                         <td>Dent</td>
-                                                         <td>Code</td>
-                                                 </tr>
-                                        </tbody>
-                                </table>
-                        </div>
+
 		</div>
 	</div><!-- container -->
 
